@@ -2,7 +2,7 @@ library(ape)
 source("funcs.R")
 args = commandArgs(trailingOnly=TRUE)
 if(length(args)<5){
-  msg = c("Usage: Rscript gene_trees.R <BRLEN_THRESH> <TAXA_THRESH> <TREEFILE> <GENE_NAMES_FILE> <OUTPUT_DIR_NAME>\n",
+  msg = c("Usage: Rscript inspect_gene_trees.R <BRLEN_THRESH> <TAXA_THRESH> <TREEFILE> <GENE_NAMES_FILE> <OUTPUT_DIR_NAME>\n",
           "==============================================================================================================\n",
           "\tBRLEN_THRESH: maximum relative branch length of the longest branch (0-1)\n",
           "\tTAXA_THRESH: minimum proportion of taxa needs to be retained by the 'saved' gene compared to the original gene tree (0-1)\n",
